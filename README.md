@@ -15,7 +15,7 @@ A simple command-line interface for managing your tasks, built as a solution to 
 ## How to Run
 
 ```bash
-git clone https://github.com/radityajay/task-tracker-cli.git
+git clone (https://github.com/radityajay/task-tracker-cli.git)
 cd task-tracker-cli
 ```
 Run the following command to build and run the project:
