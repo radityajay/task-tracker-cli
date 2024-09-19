@@ -14,7 +14,6 @@ func Run(uc task.UseCase) error {
 
 	switch command[0] {
 	case "add":
-		// TODO: Implement add task logic
 		fmt.Println("Adding a new task...")
 		return uc.Add(&task.Task{
 			ID:          0,
@@ -22,7 +21,6 @@ func Run(uc task.UseCase) error {
 			Status:      task.STATUS_TODO,
 		})
 	case "update":
-		// TODO: Implement update task logic
 		fmt.Println("Updating a task...")
 		id, err := strconv.Atoi(command[1])
 		if err != nil {
@@ -30,7 +28,6 @@ func Run(uc task.UseCase) error {
 		}
 		return uc.Update(uint(id), command[2])
 	case "list":
-		// TODO: Implement get task logic
 		fmt.Println("Getting tasks...")
 		fmt.Println("Command:", len(command))
 		var tasks []*task.Task

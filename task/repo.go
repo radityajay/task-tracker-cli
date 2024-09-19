@@ -1,9 +1,5 @@
 package task
 
-import (
-	"fmt"
-)
-
 type Repository struct {
 	filename string
 }
@@ -21,7 +17,6 @@ func (r *Repository) Add(data *Task) error {
 	}
 
 	if data.ID == 0 {
-		fmt.Println("masuk", file)
 		data.ID = 1
 		if len(file) > 0 {
 			data.ID = file[len(file)-1].ID + 1

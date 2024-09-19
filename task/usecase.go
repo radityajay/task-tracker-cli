@@ -16,7 +16,6 @@ func NewUseCase(repo *Repository) *UseCase {
 }
 
 func (uc *UseCase) Add(data *Task) error {
-	fmt.Println("masuk")
 	timeNow := time.Now()
 
 	if data.Status == "" {
